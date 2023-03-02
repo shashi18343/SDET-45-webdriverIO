@@ -35,7 +35,7 @@ it('should create new opportunities with valid credentials', async () => {
     await Opportunities.creatingOpportunities(random);
 
     })
-it('should create new opportunities with valid credentials', async () => {
+it('varyfying the created new opportunities with valid credentials', async () => {
         await Opportunities.verCreatedOppo();
     
     })

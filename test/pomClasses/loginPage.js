@@ -21,6 +21,9 @@ class Login{
       
       await  browser.url('http://testingserver:8888/');
     // await  browser.url('http://localhost:8888/'); 
+    let title1=await browser.getTitle();
+    console.log(title1);
+    expect(title1).to.equal("vtiger CRM 5 - Commercial Open Source CRM");
     await this.username.setValue(userName);
     await this.password.setValue(passWord);
     await this.loginBtn.click();
